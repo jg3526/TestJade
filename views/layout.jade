@@ -1,0 +1,17 @@
+doctype html
+html
+	head
+		title #{title} - Jade demo
+		link(rel='stylesheet', href='/css/style.css')
+	body
+		header
+			.container
+				h1 Jade demo App
+		.container
+			.main-content
+				block content
+			.sidebar
+				block sidebar
+		footer
+			.container
+				p Copyright &copy; 2014

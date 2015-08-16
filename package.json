@@ -8,7 +8,10 @@
   },
   "dependencies": {
     "express": "*",
-    "jade": "*"
+    "jade": "*",
+    "nib":"*",
+    "mongodb":"*",
+    "monk":"*"
   },
   "repository": {
     "type": "git",
