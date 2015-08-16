@@ -9,9 +9,56 @@ body{
 	color: #000;
 	background: #fff;
 }
-
+br{
+	clear: both;
+}
 ul,li{
 	list-style: none;
+}
+ul.featurelist{
+	margin-bottom: 20px;
+	display: block;
+	overflow: auto;
+}
+ul.featurelist li{
+	line-height: 2em;
+	border-bottom: #cccccc 1px dotted;
+	float: left;
+	width: 200px;
+}
+.userlistlink{
+	clear: both;
+	background-color: #cccccc;
+	margin-bottom: 20px;
+	display: block;
+}
+.userlistlink p{
+	margin: 0px;
+	padding: 5px;
+}
+
+form.addUser input{
+	margin-bottom: 15px;
+	border: 1px #cccccc solid;
+	padding: 5px;
+	height: 22px;
+	width: 95%;
+	border-radius: 5px;
+}
+form.addUser button{
+	clear: both;
+	display: block;
+}
+th,tr,td{
+	padding: 5px;
+}
+tr{
+	border-bottom: 1px #cccccc dashed;
+	display: block;
+}
+th,td{
+	width: 100px;
+	text-align: left;
 }
 a {
 	color: #333;

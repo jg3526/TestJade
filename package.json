@@ -12,7 +12,8 @@
     "stylus": "*",
     "nib":"*",
     "mongodb":"*",
-    "monk":"*"
+    "monk":"*",
+    "body-parser":"*"
   },
   "repository": {
     "type": "git",

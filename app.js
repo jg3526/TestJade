@@ -8,6 +8,7 @@ var path = require('path');
 var mongo = require('mongodb');
 var monk = require('monk');
 var db = monk('localhost:27017/jadeapp');
+var bodyParser = require('body-parser')
 
 var port = 3000;
 
@@ -30,7 +31,7 @@ console.log('Jade initilaized!');
 // Stylus Middleware
 // app.use(express.logger('dev'));
 // app.use(express.json());
-// app.use(express.urlencoded());
+app.use(bodyParser.urlencoded({ extended: false }))
 // app.use(express.methodOverride());
 // app.use(express.cookieParser('secret'));
 // app.use(express.session());
@@ -48,7 +49,7 @@ app.use(express.static(__dirname + '/public'));
 // render index
 app.get('/', routes.index);
 app.get('/userlist', routes.userlist(db));
-// app.post('/adduser', routes.adduser(db));
+app.post('/adduser', routes.adduser(db));
 
 // listen on the port
 app.listen(port);
