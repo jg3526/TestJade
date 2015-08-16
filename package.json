@@ -1,0 +1,23 @@
+{
+  "name": "jadeapp",
+  "version": "0.0.1",
+  "description": "Simple Node app with Jade",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "*",
+    "jade": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jg3526/TestJade.git"
+  },
+  "author": "Jie Gao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jg3526/TestJade/issues"
+  },
+  "homepage": "https://github.com/jg3526/TestJade#readme"
+}
