@@ -9,6 +9,7 @@
   "dependencies": {
     "express": "*",
     "jade": "*",
+    "stylus": "*",
     "nib":"*",
     "mongodb":"*",
     "monk":"*"

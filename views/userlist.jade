@@ -1,0 +1,35 @@
+extend layout
+block content
+	h1=title
+	table.usertable
+		thead
+			tr
+				th.
+					First Name
+				th.
+					Last Name
+				th.
+					Username
+				th.
+					Email
+		tbody
+			each user, i in userlist
+				tr
+					td.
+						#{user.first_name}
+					td.
+						#{user.last_name}
+					td.
+						#{user.user_name}
+					td.
+						#{user.email}
+	br
+	a(href="http://localhost:3000") Go Back
+block sidebar
+	.block
+		h1 Right Sidebar
+		p.
+			lalala
+		br
+		.readmore
+			a(href="http://www.google.com") Read More
